@@ -1,0 +1,31 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    float peso, altura, imc;
+
+    cout << "Digite o seu peso: ";
+    cin >> peso;
+
+    cout << "Digite a sua altura: ";
+    cin >> altura;
+
+    imc = peso / (altura * altura);
+
+    if (imc <= 18.4) {
+        cout << "Voce esta abaixo do peso normal / ";
+    } else if (imc >= 18.5 && imc <= 24.9) {
+        cout << "O seu peso está na faixa da normalidade / ";
+    } else if (imc >= 25 && imc <= 29.9) {
+        cout << "Voce está acima do peso normal / ";
+    } else if (imc >= 30) {
+        cout << "Voce precisa perder uns quilinhos / ";
+    }
+
+    cout << fixed << setprecision(2);
+    cout << "Seu IMC é: " << imc;
+
+    return 0;
+}
+
