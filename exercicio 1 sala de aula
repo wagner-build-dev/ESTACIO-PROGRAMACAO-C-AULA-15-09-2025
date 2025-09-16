@@ -1,0 +1,22 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+
+int idade;
+
+    cout<<"Digite a sua idade: ";
+    cin>>idade;
+    
+if (idade >= 18){
+        cout<<"Voce é maior de idade";
+} else{
+        cout<<"voce é menor de idade";
+        
+    }
+
+    return 0;
+}
